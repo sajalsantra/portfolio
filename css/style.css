@@ -1701,8 +1701,6 @@ pre em {
   resize: vertical;
   line-height: 1.6;
 }
-
-/* Send button */
 .contact-submit {
   width: 100%;
   min-height: 48px;
@@ -1740,8 +1738,6 @@ pre em {
 
   transition: transform 0.25s ease;
 }
-
-/* Hover */
 .contact-submit:hover {
   background: linear-gradient(
     135deg,
@@ -1761,22 +1757,16 @@ pre em {
 .contact-submit:hover b {
   transform: translate(4px, -3px);
 }
-
-/* Click */
 .contact-submit:active {
   transform: translateY(0);
   box-shadow: 0 3px 10px rgba(124, 108, 255, 0.12);
 }
-
-/* Disabled */
 .contact-submit:disabled {
   opacity: 0.6;
   cursor: not-allowed;
   transform: none;
   box-shadow: none;
 }
-
-/* Status message */
 #status {
   margin: 0;
   padding: 0 18px 18px;
