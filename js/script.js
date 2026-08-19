@@ -47,3 +47,28 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   sections.forEach((s) => so.observe(s));
 });
+emailjs.init({
+  publicKey: "YOUR_PUBLIC_KEY",
+});
+
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const status = document.getElementById("status");
+
+    status.textContent = "Sending...";
+
+    emailjs
+      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+      .then(() => {
+        status.textContent = "Message sent successfully!";
+
+        document.getElementById("contact-form").reset();
+      })
+      .catch((error) => {
+        console.error(error);
+        status.textContent = "Failed to send message. Please try again.";
+      });
+  });

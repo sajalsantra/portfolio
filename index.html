@@ -314,8 +314,10 @@
               <div class="project-highlights">
                 <span>Role-based authentication</span
                 ><span>JWT & Spring Security</span><span>Job Seeker APIs</span
-                ><span>JPA & Hibernate Persistence</span><span>Layered Backend Architecture</span><span>Oracle Database</span>
-                <span>DTO-Based API Design</span><span>Role-Based Authorization</span>
+                ><span>JPA & Hibernate Persistence</span
+                ><span>Layered Backend Architecture</span
+                ><span>Oracle Database</span> <span>DTO-Based API Design</span
+                ><span>Role-Based Authorization</span>
               </div>
               <div class="project-meta">
                 <strong>Focus</strong><span>Backend & Full Stack</span>
@@ -323,7 +325,8 @@
               <div class="tags">
                 <span>Java</span><span>Spring Boot</span><span>Angular</span
                 ><span>REST APIs</span><span>Spring Security</span
-                ><span>JWT</span><span>Spring Data JPA</span><span>Hibernate</span><span>SQL</span>
+                ><span>JWT</span><span>Spring Data JPA</span
+                ><span>Hibernate</span><span>SQL</span>
               </div>
               <div class="project-links">
                 <a
@@ -504,49 +507,96 @@
               engineering, Java backend development and related opportunities.
             </p>
             <div class="contact-actions">
-              <a class="btn btn-primary" href="mailto:mr.sajal2552@gmail.com"
-                >Email Me ↗</a
-              ><a
+              <a
+                class="btn btn-primary"
+                href="mailto:mr.sajal2552@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="contact-copy">Email Me ↗</span>
+              </a>
+              <a
+                class="btn btn-primary"
+                href="https://www.linkedin.com/in/sajalsantra/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="contact-copy">LinkedIn ↗</span>
+              </a>
+
+              <a
+                class="btn btn-primary"
+                href="https://github.com/sajalsantra"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="contact-copy">GitHub ↗</span>
+              </a>
+              <!-- <a
                 class="btn btn-secondary"
                 href="assets/Sajal_Santra_Resume.pdf"
                 download
                 >Download Resume ↓</a
-              >
+              > -->
             </div>
           </div>
           <div class="contact-panel">
             <div class="contact-panel-top">
-              <span>DIRECT CONTACT</span><span>03 CHANNELS</span>
+              <span>DIRECT CONTACT</span>
+              <span>03 CHANNELS</span>
             </div>
-            <a class="contact-link" href="mailto:mr.sajal2552@gmail.com"
-              ><span class="contact-icon">✉</span
-              ><span class="contact-copy"
-                ><small>Email</small
-                ><strong>mr.sajal2552@gmail.com</strong></span
-              ><b>↗</b></a
-            >
-            <a
-              class="contact-link"
-              href="https://www.linkedin.com/in/sajalsantra/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><span class="contact-icon">in</span
-              ><span class="contact-copy"
-                ><small>LinkedIn</small
-                ><strong>linkedin.com/in/sajalsantra</strong></span
-              ><b>↗</b></a
-            >
-            <a
-              class="contact-link"
-              href="https://github.com/sajalsantra"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><span class="contact-icon">&lt;/&gt;</span
-              ><span class="contact-copy"
-                ><small>GitHub</small
-                ><strong>github.com/sajalsantra</strong></span
-              ><b>↗</b></a
-            >
+
+            <form id="contact-form">
+              <div class="contact-field">
+                <label for="from_name">Name</label>
+                <input
+                  type="text"
+                  id="from_name"
+                  name="from_name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+
+              <div class="contact-field">
+                <label for="from_email">Email</label>
+                <input
+                  type="email"
+                  id="from_email"
+                  name="from_email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+
+              <div class="contact-field">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+
+              <div class="contact-field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="contact-submit">
+                <span>Submit</span>
+                <b>↗</b>
+              </button>
+            </form>
+
+            <p id="status"></p>
           </div>
         </div>
       </section>
@@ -557,6 +607,7 @@
         ><a href="#top">Back to top ↑</a>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
